@@ -1,0 +1,32 @@
+{
+  "name": "example-indexer",
+  "description": null,
+  "dataSourceName": "pdf-samples",
+  "skillsetName": "example-skillset",
+  "targetIndexName": "example-index-2",
+  "disabled": null,
+  "schedule": {
+    "interval": "P1D",
+    "startTime": "2024-07-29T17:53:10.645Z"
+  },
+  "parameters": {
+    "batchSize": null,
+    "maxFailedItems": null,
+    "maxFailedItemsPerBatch": null,
+    "base64EncodeKeys": null,
+    "configuration": {
+      "dataToExtract": "contentAndMetadata",
+      "parsingMode": "default"
+    }
+  },
+  "fieldMappings": [
+    {
+      "sourceFieldName": "metadata_storage_name",
+      "targetFieldName": "title",
+      "mappingFunction": null
+    }
+  ],
+  "outputFieldMappings": [],
+  "cache": null,
+  "encryptionKey": null
+}

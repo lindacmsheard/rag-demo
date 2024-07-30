@@ -1,0 +1,214 @@
+{
+  "flow_runs": [
+    {
+      "run_id": "88a609db-89f6-4a4d-847f-cfa150f6385a_0",
+      "status": "Completed",
+      "error": null,
+      "inputs": {
+        "question": "What's the smallest island in the pacific"
+      },
+      "output": {
+        "output": "Determining the smallest island in the Pacific Ocean can be challenging because there are countless tiny islets and atolls scattered across this vast region. Many of these are uninhabited and may not even have official names or measurements. However, some of the smallest islands that are recognized and documented include:\n\n1. **Baker Island**: This is a small, uninhabited atoll located just north of the equator in the central Pacific Ocean. It is an unincorporated territory of the United States and has a land area of about 1.64 square kilometers (0.63 square miles).\n\n2. **Howland Island**: Another small, uninhabited atoll, also an unincorporated territory of the United States, located near Baker Island. It has a land area of about 1.84 square kilometers (0.71 square miles).\n\nThese islands are among the smallest recognized landmasses in the Pacific Ocean. However, there are likely smaller, unnamed islets and rocks that are not officially recorded."
+      },
+      "metrics": null,
+      "request": null,
+      "parent_run_id": "88a609db-89f6-4a4d-847f-cfa150f6385a",
+      "root_run_id": "88a609db-89f6-4a4d-847f-cfa150f6385a",
+      "source_run_id": null,
+      "flow_id": "default_flow_id",
+      "start_time": "2024-07-30T09:46:06.263334Z",
+      "end_time": "2024-07-30T09:46:09.711910Z",
+      "index": 0,
+      "api_calls": [
+        {
+          "name": "chat",
+          "type": "Flow",
+          "inputs": {
+            "question": "What's the smallest island in the pacific"
+          },
+          "output": "Determining the smallest island in the Pacific Ocean can be challenging because there are countless tiny islets and atolls scattered across this vast region. Many of these are uninhabited and may not even have official names or measurements. However, some of the smallest islands that are recognized and documented include:\n\n1. **Baker Island**: This is a small, uninhabited atoll located just north of the equator in the central Pacific Ocean. It is an unincorporated territory of the United States and has a land area of about 1.64 square kilometers (0.63 square miles).\n\n2. **Howland Island**: Another small, uninhabited atoll, also an unincorporated territory of the United States, located near Baker Island. It has a land area of about 1.84 square kilometers (0.71 square miles).\n\nThese islands are among the smallest recognized landmasses in the Pacific Ocean. However, there are likely smaller, unnamed islets and rocks that are not officially recorded.",
+          "start_time": 1722329166.271661,
+          "end_time": 1722329169.709968,
+          "error": null,
+          "children": [
+            {
+              "name": "Prompty",
+              "type": "Function",
+              "inputs": {
+                "question": "What's the smallest island in the pacific"
+              },
+              "output": "Determining the smallest island in the Pacific Ocean can be challenging because there are countless tiny islets and atolls scattered across this vast region. Many of these are uninhabited and may not even have official names or measurements. However, some of the smallest islands that are recognized and documented include:\n\n1. **Baker Island**: This is a small, uninhabited atoll located just north of the equator in the central Pacific Ocean. It is an unincorporated territory of the United States and has a land area of about 1.64 square kilometers (0.63 square miles).\n\n2. **Howland Island**: Another small, uninhabited atoll, also an unincorporated territory of the United States, located near Baker Island. It has a land area of about 1.84 square kilometers (0.71 square miles).\n\nThese islands are among the smallest recognized landmasses in the Pacific Ocean. However, there are likely smaller, unnamed islets and rocks that are not officially recorded.",
+              "start_time": 1722329166.297959,
+              "end_time": 1722329169.709814,
+              "error": null,
+              "children": [
+                {
+                  "name": "convert_prompt_template",
+                  "type": "Function",
+                  "inputs": {
+                    "template": "\nsystem:\nYou are a helpful assistant.\n\nuser:\n{{question}}",
+                    "inputs": {
+                      "question": "What's the smallest island in the pacific"
+                    }
+                  },
+                  "output": [
+                    {
+                      "role": "system",
+                      "content": "You are a helpful assistant."
+                    },
+                    {
+                      "role": "user",
+                      "content": "What's the smallest island in the pacific"
+                    }
+                  ],
+                  "start_time": 1722329166.300109,
+                  "end_time": 1722329166.324874,
+                  "error": null,
+                  "children": [],
+                  "node_name": null,
+                  "parent_id": "2b3cf9f4-1e37-4c2a-9bec-370ce8f258e7",
+                  "id": "1e979d9e-f090-4b8b-8689-4a16a13dc5fa",
+                  "function": "convert_prompt_template",
+                  "system_metrics": {}
+                },
+                {
+                  "name": "openai_chat",
+                  "type": "LLM",
+                  "inputs": {
+                    "temperature": 0.2,
+                    "max_tokens": 1024,
+                    "model": "gpt-4o",
+                    "messages": [
+                      {
+                        "role": "system",
+                        "content": "You are a helpful assistant."
+                      },
+                      {
+                        "role": "user",
+                        "content": "What's the smallest island in the pacific"
+                      }
+                    ]
+                  },
+                  "output": {
+                    "id": "chatcmpl-9qdigqpp8c7tlYnkHTWxtrgNMHaNi",
+                    "choices": [
+                      {
+                        "finish_reason": "stop",
+                        "index": 0,
+                        "logprobs": null,
+                        "message": {
+                          "content": "Determining the smallest island in the Pacific Ocean can be challenging because there are countless tiny islets and atolls scattered across this vast region. Many of these are uninhabited and may not even have official names or measurements. However, some of the smallest islands that are recognized and documented include:\n\n1. **Baker Island**: This is a small, uninhabited atoll located just north of the equator in the central Pacific Ocean. It is an unincorporated territory of the United States and has a land area of about 1.64 square kilometers (0.63 square miles).\n\n2. **Howland Island**: Another small, uninhabited atoll, also an unincorporated territory of the United States, located near Baker Island. It has a land area of about 1.84 square kilometers (0.71 square miles).\n\nThese islands are among the smallest recognized landmasses in the Pacific Ocean. However, there are likely smaller, unnamed islets and rocks that are not officially recorded.",
+                          "role": "assistant",
+                          "function_call": null,
+                          "tool_calls": null
+                        },
+                        "content_filter_results": {
+                          "hate": {
+                            "filtered": false,
+                            "severity": "safe"
+                          },
+                          "self_harm": {
+                            "filtered": false,
+                            "severity": "safe"
+                          },
+                          "sexual": {
+                            "filtered": false,
+                            "severity": "safe"
+                          },
+                          "violence": {
+                            "filtered": false,
+                            "severity": "safe"
+                          }
+                        }
+                      }
+                    ],
+                    "created": 1722332766,
+                    "model": "gpt-4o-2024-05-13",
+                    "object": "chat.completion",
+                    "service_tier": null,
+                    "system_fingerprint": "fp_abc28019ad",
+                    "usage": {
+                      "completion_tokens": 212,
+                      "prompt_tokens": 25,
+                      "total_tokens": 237
+                    },
+                    "prompt_filter_results": [
+                      {
+                        "prompt_index": 0,
+                        "content_filter_results": {
+                          "hate": {
+                            "filtered": false,
+                            "severity": "safe"
+                          },
+                          "self_harm": {
+                            "filtered": false,
+                            "severity": "safe"
+                          },
+                          "sexual": {
+                            "filtered": false,
+                            "severity": "safe"
+                          },
+                          "violence": {
+                            "filtered": false,
+                            "severity": "safe"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "start_time": 1722329166.357011,
+                  "end_time": 1722329169.70949,
+                  "error": null,
+                  "children": [],
+                  "node_name": null,
+                  "parent_id": "2b3cf9f4-1e37-4c2a-9bec-370ce8f258e7",
+                  "id": "adbd11e3-b7ee-41b6-a4a6-a2a291f5d024",
+                  "function": "openai.resources.chat.completions.Completions.create",
+                  "system_metrics": {
+                    "completion_tokens": 212,
+                    "prompt_tokens": 25,
+                    "total_tokens": 237
+                  }
+                }
+              ],
+              "node_name": null,
+              "parent_id": "80497caf-af78-4b8a-8f4a-ac5ea297b8fa",
+              "id": "2b3cf9f4-1e37-4c2a-9bec-370ce8f258e7",
+              "function": "Prompty",
+              "system_metrics": {
+                "completion_tokens": 212,
+                "prompt_tokens": 25,
+                "total_tokens": 237
+              }
+            }
+          ],
+          "node_name": null,
+          "parent_id": "",
+          "id": "80497caf-af78-4b8a-8f4a-ac5ea297b8fa",
+          "function": "chat",
+          "system_metrics": {
+            "completion_tokens": 212,
+            "prompt_tokens": 25,
+            "total_tokens": 237
+          }
+        }
+      ],
+      "name": "",
+      "description": "",
+      "tags": null,
+      "system_metrics": {
+        "completion_tokens": 212,
+        "prompt_tokens": 25,
+        "total_tokens": 237,
+        "duration": 3.448576
+      },
+      "result": {
+        "output": "Determining the smallest island in the Pacific Ocean can be challenging because there are countless tiny islets and atolls scattered across this vast region. Many of these are uninhabited and may not even have official names or measurements. However, some of the smallest islands that are recognized and documented include:\n\n1. **Baker Island**: This is a small, uninhabited atoll located just north of the equator in the central Pacific Ocean. It is an unincorporated territory of the United States and has a land area of about 1.64 square kilometers (0.63 square miles).\n\n2. **Howland Island**: Another small, uninhabited atoll, also an unincorporated territory of the United States, located near Baker Island. It has a land area of about 1.84 square kilometers (0.71 square miles).\n\nThese islands are among the smallest recognized landmasses in the Pacific Ocean. However, there are likely smaller, unnamed islets and rocks that are not officially recorded."
+      },
+      "upload_metrics": false,
+      "otel_trace_id": "0x9bd192347e855abbe2dee54dc62594ed",
+      "message_format": "basic"
+    }
+  ],
+  "node_runs": []
+}

@@ -1,0 +1,12 @@
+{
+    "function": "chat",
+    "entry": "main:chat",
+    "code": "/home/lisheard/cmd/CBAS/dsit/rag-demo/orchestration/promptflow",
+    "name": "promptflow",
+    "inputs": {
+        "question": {
+            "type": "string",
+            "default": "What's the capital of France?"
+        }
+    }
+}

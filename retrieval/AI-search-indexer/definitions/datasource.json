@@ -1,0 +1,16 @@
+{
+    "name": "pdf-samples",
+    "description": null,
+    "type": "azureblob",
+    "subtype": null,
+    "credentials": {
+      "connectionString": "DefaultEndpointsProtocol=https;AccountName=ragsolutionstorage;AccountKey=..."
+    },
+    "container": {
+      "name": "sampledata",
+      "query": "pdf"
+    },
+    "dataChangeDetectionPolicy": null,
+    "dataDeletionDetectionPolicy": null,
+    "encryptionKey": null
+  }

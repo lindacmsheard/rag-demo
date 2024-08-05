@@ -40,3 +40,7 @@ az functionapp create --resource-group rag --consumption-plan-location uksouth -
 func azure functionapp publish ai-search-functions-py --publish-local-settings
 ```
 
+sample GET request
+```
+https://ai-search-functions-py.azurewebsites.net/api/extract_xml_item?item=Barcode&file=ExampleXML.xml
+```

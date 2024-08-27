@@ -35,3 +35,7 @@ A couple of simple local apps to interact with
 
 Key takeaway:
 - your LLM calls and your data integration are now decoupled from the front end.
+
+# Next steps:
+- To implement end to end code-first implementation using AI search and promptflow with the help of the unified AI Studio SDKs, continue here:
+  - https://learn.microsoft.com/en-gb/azure/ai-studio/tutorials/copilot-sdk-build-rag

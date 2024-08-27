@@ -39,3 +39,5 @@ Key takeaway:
 # Next steps:
 - To implement end to end code-first implementation using AI search and promptflow with the help of the unified AI Studio SDKs, continue here:
   - https://learn.microsoft.com/en-gb/azure/ai-studio/tutorials/copilot-sdk-build-rag
+- To build on top of the AI Studio-provided Front-end starter web app, continue here:
+  - https://learn.microsoft.com/en-gb/azure/ai-services/openai/how-to/use-web-app
